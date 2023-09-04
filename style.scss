@@ -1,0 +1,706 @@
+@font-face {
+  font-family: "Gotham Pro Black";
+  src: url(./fonts/gothampro_light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Gotham Pro Black";
+  src: url(./fonts/gothampro.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gotham Pro Black";
+  src: url(./fonts/gothampro_medium.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gotham Pro Black";
+  src: url(./fonts/gothampro_bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gotham Pro Black";
+  src: url(./fonts/gothampro_black.ttf);
+  font-weight: 800;
+}
+
+$colorOrange: #e2521d;
+$colorWhite: #ffffff;
+$colorGrey: #8997ab;
+$colorRed: #fa4682;
+$colorBlack: #0e1b28;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 62px;
+}
+
+.none {
+  display: none;
+}
+.adap {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gotham Pro Black";
+  color: $colorWhite;
+}
+
+a {
+  text-decoration: none;
+  color: $colorWhite;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: linear-gradient(RGB(37, 34, 55), RGB(39, 45, 69));
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1073px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+}
+
+input {
+  background-color: none;
+  outline: none;
+  border: none;
+}
+
+// СЕКЦИЯ 1 ===================================
+.main-fullscreen {
+  header.header-fullscreen {
+    nav.nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        p {
+          font-size: 25px;
+          font-weight: 700;
+        }
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        li {
+          padding: 0 30px;
+          font-size: 18px;
+          font-weight: 400;
+          &:hover a {
+            transition: 0.1s;
+            color: $colorOrange;
+          }
+        }
+      }
+      .submit {
+        &:hover p {
+          transition: 0.1s;
+          color: $colorOrange;
+        }
+      }
+    }
+    .wrapper-header-content {
+      padding: 100px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        .wrapper-text {
+          margin-top: -80px;
+          h1 {
+            text-align: left;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 65px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24.38px;
+            padding-top: 30px;
+          }
+          button.none {
+            display: none;
+          }
+          button {
+            background-color: $colorOrange;
+            width: 367px;
+            height: 80px;
+            font-weight: 600;
+            font-size: 20px;
+            margin-top: 70px;
+            cursor: pointer;
+            &:hover {
+              background-color: $colorWhite;
+              color: $colorOrange;
+              transition: 0.1s all;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Секция 2 ==================================
+.main-about-course {
+  .wrapper-about-course {
+    display: flex;
+    justify-content: space-between;
+    .right {
+      .wrapper-text {
+        width: 90%;
+        margin-left: 70px;
+        h2 {
+          font-size: 50px;
+          font-weight: 700;
+          line-height: 62px;
+        }
+        p {
+          font-size: 25px;
+          line-height: 40px;
+          font-weight: 400;
+          color: $colorOrange;
+          padding-top: 40px;
+        }
+        p + p {
+          font-size: 18px;
+          line-height: 34px;
+          color: $colorGrey;
+        }
+      }
+    }
+  }
+}
+// Секция 3 ==================================
+.main-learn-what {
+  h3 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    width: 49%;
+    margin: 0 auto;
+  }
+  .wrapper-learn-what {
+    margin: 0 auto;
+    width: 95%;
+    .wrapper-post {
+      padding: 100px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .post {
+        margin-top: 80px;
+        width: 40%;
+        margin-left: 5px;
+        .wrapper-img {
+          position: relative;
+          p {
+            position: absolute;
+            top: 10%;
+            left: 7%;
+            font-size: 25px;
+            line-height: 68px;
+            font-weight: 400;
+            color: $colorOrange;
+          }
+        }
+        .wrapper-text {
+          height: 100px;
+          width: 100%;
+          p {
+            font-size: 18px;
+            line-height: 34px;
+            font-weight: 500;
+            padding: 30px 0;
+          }
+        }
+      }
+    }
+  }
+}
+// Секция 4 ==================================
+.main-course-program {
+  h4 {
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+  }
+  .wrapper-course-program {
+    padding-top: 80px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .wrapper-unfolding-list {
+        width: 100%;
+      }
+      li.post-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+        height: 100px;
+        border-radius: 2px;
+        background-color: $colorBlack;
+        .wrapper-text {
+          display: flex;
+          p {
+            padding: 0;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 18.29px;
+          }
+          p {
+            padding: 0 5px;
+          }
+        }
+        .wrapper-click {
+          width: 50px;
+          height: 50px;
+          border-radius: 25px;
+          border: 1px solid $colorWhite;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          p {
+            font-size: 40px;
+            font-weight: 300;
+          }
+        }
+      }
+
+      ul.information-list {
+        align-items: start;
+        padding: 25px 0 0 0;
+        overflow: hidden;
+
+        li {
+          padding: 10px 50px;
+        }
+      }
+      #folding-list-1 {
+        height: 0px;
+      }
+      #folding-list-2 {
+        height: 0px;
+      }
+      #folding-list-3 {
+        height: 0px;
+      }
+    }
+  }
+}
+// Секция 5 ==================================
+.main-who-get-this-course {
+  h5 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .wrapper-who-get-this-course {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      width: 40%;
+      .wrapper-img {
+        img {
+          width: 150%;
+        }
+      }
+    }
+    .right {
+      width: 40%;
+      .wrapper-text {
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 40px;
+          color: $colorOrange;
+          padding: 10px 0;
+        }
+        p + p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 34px;
+          color: $colorGrey;
+        }
+      }
+    }
+  }
+}
+// Секция 6 ==================================
+.main-complete-course {
+  h6 {
+    text-align: center;
+  }
+  .wrapper-complete {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .post {
+      width: 45%;
+      .wrapper-text {
+        height: 250px;
+        p {
+          padding: 20px 0;
+          font-weight: 700;
+          font-size: 23px;
+          line-height: 22px;
+        }
+        p + p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 34px;
+          color: $colorGrey;
+        }
+      }
+    }
+  }
+}
+// Секция 7 ==================================
+.main-join-course {
+  .wrapper-join-course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 177px;
+    background-color: $colorOrange;
+    .wrapper-text {
+      text-align: center;
+      p {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 22px;
+        padding-top: 20px;
+      }
+      p + p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
+      }
+    }
+  }
+  .wrapper-join-post {
+    border-bottom: 1px solid #706470;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .post {
+      display: flex;
+      align-items: center;
+      width: 25%;
+      p {
+        padding-left: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+// Секция 8 ==================================
+.main-sub-footer {
+  .wrapper-sub-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 700;
+      color: $colorWhite;
+      padding-top: 20px;
+    }
+    p {
+      span {
+        color: $colorRed;
+      }
+    }
+    p + p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+      padding: 20px 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 458px;
+      input[type="text"] {
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid $colorOrange;
+        padding: 0 20px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.6px;
+        color: $colorWhite;
+        &::placeholder {
+          color: $colorWhite;
+        }
+      }
+      input[type="submit"] {
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        background-color: $colorOrange;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 29.4px;
+        margin-top: 20px;
+        cursor: pointer;
+        &:hover {
+          background-color: $colorWhite;
+          transition: 0.1s all;
+          color: $colorOrange;
+        }
+      }
+      .wrapper-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input[type="checkbox"] {
+          height: 28px;
+          width: 28px;
+        }
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16.8px;
+          padding-bottom: 10px;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
+// Секция 9 ==================================
+footer {
+  .wrapper-footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .post {
+      .wrapper-text {
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+// МЕДИА ==================================
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .adap {
+    display: block;
+  }
+  // Section 1
+
+  .main-fullscreen {
+    .header-fullscreen {
+      .nav {
+        ul {
+          li {
+            display: none;
+          }
+        }
+        .submit {
+          display: none;
+        }
+      }
+      .wrapper-header-content {
+        .left {
+          width: 100%;
+          height: 450px;
+          background-image: url(./img/fon\ 3.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          .wrapper-text {
+            h1.change {
+              font-size: 40px;
+              width: 80%;
+              line-height: 40px;
+            }
+            p.change {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 28px;
+            }
+            button.none {
+              display: none;
+            }
+            button.change {
+              display: block;
+              background-color: #f54b31;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-about-course {
+    .wrapper-about-course {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .left {
+        .wrapper-image {
+          margin-top: 50px;
+          margin-left: 40px;
+          img {
+            width: 80%;
+          }
+        }
+      }
+      .right {
+        .wrapper-text {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          h2 {
+            text-align: left;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .main-learn-what {
+    h3 {
+      text-align: left;
+      padding: 0;
+      width: 100%;
+      font-size: 30px;
+      line-height: 44px;
+      padding-top: 60px;
+    }
+    .wrapper-learn-what {
+      .wrapper-post {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .post {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .main-course-program {
+    h4 {
+      text-align: left;
+      width: 50%;
+      padding: 0;
+      margin: 0;
+      font-size: 30px;
+      line-height: 44px;
+    }
+  }
+
+  .main-who-get-this-course {
+    h5 {
+      text-align: left;
+      width: 70%;
+      padding: 0;
+      margin: 0;
+      font-size: 30px;
+      line-height: 44px;
+    }
+    .wrapper-who-get-this-course {
+      flex-direction: column-reverse;
+      .right {
+        .wrapper-text {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          p {
+            padding: 0;
+            margin: 0;
+            width: 230%;
+            text-align: left;
+            margin-left: -105px;
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+  .main-complete-course {
+    h6 {
+      font-size: 30px;
+      line-height: 44px;
+      width: 70%;
+      text-align: left;
+    }
+    .wrapper-complete {
+      flex-direction: column;
+      .post {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 100px;
+      }
+    }
+  }
+  .main-join-course {
+    .wrapper-join-post {
+      flex-direction: column;
+      .post {
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+  .main-sub-footer {
+    .wrapper-sub-footer {
+      form {
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    .wrapper-footer {
+      flex-direction: column;
+      .post {
+        margin-top: 40px;
+        width: 100%;
+      }
+    }
+  }
+}
